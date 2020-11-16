@@ -1,0 +1,18 @@
+programa 
+{
+	inclua biblioteca Calendario
+	
+	funcao inicio()
+	{
+	inteiro diaAtual = Calendario.dia_mes_atual()
+     inteiro mesAtual = Calendario.mes_atual()
+
+	inteiro diasParaAcabarMes = 30 - diaAtual
+     inteiro mesesParaAcabar = 12 - mesAtual
+     
+	inteiro diasParaAcabarAno = diasParaAcabarMes + (mesesParaAcabar * 30)
+
+     escreva ("faltam aprox.",diasParaAcabarAno," dias para acabar o ano")
+	 
+	}
+}
